@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
+    <title>Incendio en California</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,14 +15,13 @@
             background-color: #333;
             color: white;
             padding: 10px;
-
         }
 
         .masthead h1 {
             margin: 0;
         }
 
-        .masthead a {
+        .masthead nav a {
             color: white;
             text-decoration: none;
             margin-right: 10px;
@@ -64,7 +64,7 @@
             flex: 1;
         }
 
-        .collapsabile {
+        .collapsible {
             margin-bottom: 20px;
             border: 1px solid #ccc;
             padding: 10px;
@@ -84,84 +84,82 @@
 </head>
 
 <body>
-    <div class="masthead">
+    <header class="masthead">
         <h1>New York Times</h1>
-        <div style="display: flex; gap: 1rem;">
-            <div>
-                <a href="world.html">Mundo</a>
-            </div>
-            <div>
-                <a href="sports.html">Deportes</a>
-            </div>
-            <div>
-                <a href="local.html">Local</a>
-            </div>
-        </div>
-    </div>
+        <nav>
+            <a href="world.html">Mundo</a>
+            <a href="sports.html">Deportes</a>
+            <a href="local.html">Local</a>
+        </nav>
+    </header>
     <div class="content">
-        <div class="main-article">
-            <div class="article-heading">
-                <h2>Incendio devastador en California</h2>
-                <p>15 de abril de 2024</p>
-            </div>
-            <div>
-                <h3>Más de 100 hogares destruidos</h3>
-                <p>Un incendio forestal ha arrasado una vasta área en el norte de California, destruyendo más de 100
-                    hogares y forzando la evacuación de miles de residentes.</p>
-                <h4>Causas aún desconocidas</h4>
-                <p>Las autoridades aún están investigando las causas del incendio, que comenzó el pasado fin de semana y
-                    se ha extendido rápidamente debido a las condiciones climáticas adversas.</p>
-            </div>
-            <div>
-                <h3>Despliegue masivo de bomberos</h3>
-                <p>Se ha desplegado un gran contingente de bomberos y equipos de emergencia para contener las llamas,
-                    pero se enfrentan a desafíos significativos debido a la topografía accidentada y los fuertes
-                    vientos.</p>
-                <p>Se espera que las labores de extinción continúen en los próximos días mientras los equipos trabajan
-                    arduamente para proteger vidas y propiedades.</p>
-            </div>
-            <div>
-                <h3>Preocupaciones por la calidad del aire</h3>
-                <p>Las autoridades también están advirtiendo sobre la mala calidad del aire en la región, instando a los
-                    residentes a tomar precauciones y permanecer en el interior siempre que sea posible.</p>
-            </div>
-            <div class="forest">
-                <h3>Incendios forestales en aumento</h3>
-                <ul>
-                    <li>Los incendios forestales están aumentando en frecuencia y magnitud en todo el mundo, exacerbados
-                        por el cambio climático y la actividad humana.</li>
-                    <li>Las comunidades están siendo desafiadas a adaptarse y prepararse para enfrentar estos crecientes
-                        riesgos.</li>
-                    <li>Se requieren medidas urgentes a nivel local, nacional y global para abordar la crisis climática
-                        y proteger el medio ambiente.</li>
-                </ul>
-            </div>
-            <div class="bottom">
-                Contacta al autor en <a href="mailto:kyle.coberly@gmail.com">kyle.coberly@gmail.com</a>
-            </div>
-        </div>
-        <div class="other-news">
+        <main class="main-article">
+            <article>
+                <header class="article-heading">
+                    <h2>Incendio devastador en California</h2>
+                    <p><time datetime="2024-04-15">15 de abril de 2024</time></p>
+                </header>
+                <section>
+                    <h3>Más de 100 hogares destruidos</h3>
+                    <p>Un incendio forestal ha arrasado una vasta área en el norte de California, destruyendo más de 100
+                        hogares y forzando la evacuación de miles de residentes.</p>
+                </section>
+                <section>
+                    <h4>Causas aún desconocidas</h4>
+                    <p>Las autoridades aún están investigando las causas del incendio, que comenzó el pasado fin de semana y
+                        se ha extendido rápidamente debido a las condiciones climáticas adversas.</p>
+                </section>
+                <section>
+                    <h3>Despliegue masivo de bomberos</h3>
+                    <p>Se ha desplegado un gran contingente de bomberos y equipos de emergencia para contener las llamas,
+                        pero se enfrentan a desafíos significativos debido a la topografía accidentada y los fuertes
+                        vientos.</p>
+                    <p>Se espera que las labores de extinción continúen en los próximos días mientras los equipos trabajan
+                        arduamente para proteger vidas y propiedades.</p>
+                </section>
+                <section>
+                    <h3>Preocupaciones por la calidad del aire</h3>
+                    <p>Las autoridades también están advirtiendo sobre la mala calidad del aire en la región, instando a los
+                        residentes a tomar precauciones y permanecer en el interior siempre que sea posible.</p>
+                </section>
+                <section class="forest">
+                    <h3>Incendios forestales en aumento</h3>
+                    <ul>
+                        <li>Los incendios forestales están aumentando en frecuencia y magnitud en todo el mundo, exacerbados
+                            por el cambio climático y la actividad humana.</li>
+                        <li>Las comunidades están siendo desafiadas a adaptarse y prepararse para enfrentar estos crecientes
+                            riesgos.</li>
+                        <li>Se requieren medidas urgentes a nivel local, nacional y global para abordar la crisis climática
+                            y proteger el medio ambiente.</li>
+                    </ul>
+                </section>
+                <footer>
+                    Contacta al autor en <a href="mailto:kyle.coberly@gmail.com">kyle.coberly@gmail.com</a>
+                </footer>
+            </article>
+        </main>
+        <aside class="other-news">
             <h2>También en las noticias</h2>
-            <div class="collapsabile">
-                <div class="teaser-text">Desfile del Día de la Independencia</div>
+            <section class="collapsible">
+                <div class="teaser-text"><h3>Desfile del Día de la Independencia</h3></div>
                 <p>Miles de personas se reunieron en las calles de la ciudad para celebrar el Día de la Independencia
                     con un colorido desfile y eventos festivos.</p>
-            </div>
-            <div class="collapsabile">
-                <div class="teaser-text">Nuevas restricciones de viaje</div>
+            </section>
+            <section class="collapsible">
+                <div class="teaser-text"><h3>Nuevas restricciones de viaje</h3></div>
                 <p>El gobierno anuncia nuevas restricciones de viaje debido al aumento de casos de COVID-19 en todo el
                     país, afectando a millones de personas que planeaban vacaciones.</p>
-            </div>
-            <div class="collapsabile">
-                <div class="teaser-text">Lanzamiento de un nuevo satélite</div>
+            </section>
+            <section class="collapsible">
+                <div class="teaser-text"><h3>Lanzamiento de un nuevo satélite</h3></div>
                 <p>Una empresa espacial lanza con éxito un nuevo satélite de comunicaciones que proporcionará cobertura
                     mejorada en áreas remotas y rurales.</p>
-            </div>
-        </div>
+            </section>
+        </aside>
     </div>
-    <div class="page-bottom">
+    <footer class="page-bottom">
         <span class="legal">Copyright 2024, New York Times</span>
-    </div>
+    </footer>
 </body>
 
 </html>
